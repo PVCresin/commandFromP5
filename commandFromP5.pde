@@ -10,7 +10,6 @@ void command(String... params) {
   try {
     ProcessBuilder pb = new ProcessBuilder(params);
     pb.directory(new File(sketchPath()));
-
     Process process = pb.start();
     process.waitFor();
 
